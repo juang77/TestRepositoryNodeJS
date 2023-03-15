@@ -1,0 +1,11 @@
+apiVersion: V2
+appVersion: 1.0.13
+dependencies:
+- name: eks-namespace-provisioning
+  repository: https://aws-nexus-docker-ss-prod-us-east-1.thc.travp.net/repo/repository/ICSSnpHelmLobM_P
+  veraion: 1.0.13
+description: A Helm chart for NameSpace Provisioning
+mainteiners:
+- name: pipeline_gitops@travelers.com
+name: eks-namespace-provisioning
+version: 1.0.13
