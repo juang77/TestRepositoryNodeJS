@@ -1,0 +1,27 @@
+eks-namespace-provisioning:
+  log: bi
+  environment: dev
+  roles:
+    admin:
+      - eks_bi-journey-flowuw-nonprod-admin
+      - eks_bi-vanguard-admin
+      - eks_bi-awsnp1-admin
+    edit:
+      - eks_bi-journey-flowuw-nonprod-edit
+      - eks_bi-vanguard-edit
+      - eks_bi-awsnp1-edit
+    view:
+      - eks_bi-journey-flowuw-nonprod-view
+      - eks_bi-vanguard-view
+      - eks_bi-awsnp1-view
+  namespace:
+    name: bipolicy-bookingundefined
+    quota: default
+    description: "BI Journey Flow Underwriting Development"
+    annotations:
+      trv.net/owners: ["mjbahr@travelers.com","khadjsal@travelers.com"]
+      trv.net/email-groups: ["mjbahr@travelers.com"]
+    labels:
+      trv.net/use-case: bi-policy-booking
+      trv.net/troux-id: 292052
+      trv.net/system-number: "1825"
