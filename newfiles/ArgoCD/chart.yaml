@@ -1,0 +1,11 @@
+apiVersion: V2
+appVersion: 1.0.0
+dependencies:
+- name: eks-argocd-provisioning
+  repository: https://aws-nexus-docker-ss-prod-us-east-1.thc.travp.net/repo/repository/ICSRelHelmLobM_P
+  veraion: 1.0.0
+description: A Helm chart for NameSpace Operator, a declarative setup to deploy to Kubernetes.
+mainteiners:
+- name: pipeline_gitops@travelers.com
+name: eks-argocd-provisioning
+version: 1.0.0
